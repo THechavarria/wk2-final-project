@@ -537,7 +537,9 @@ button {
   width: calc(100% / 3);
   padding: 24px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+
 }
 
 .business__plan {
@@ -679,12 +681,13 @@ img {
   height: 16px;
 }
 
-.testimonials__scroll--button {
+.testimonials__scroll--left,
+.testimonials__scroll--right {
   background-color: #edf2f7;
-  color: white;
+  color: black;
   margin: 0 12px;
   padding: 16px;
-
+  border-radius: 50px;
 }
 
 .testimonials__action--buttons {
@@ -810,10 +813,10 @@ img {
 
 .footer__logo--container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 64px 32px;
-  background-color: rgb(255, 255, 255);
+  background-color: #6415ff;
 }
 
 .footer__treact--logo {
@@ -827,7 +830,7 @@ img {
 }
 
 .footer__logo {
-  color: #0f4a71;
+  color: #f7fafc;
   font-size: 20px;
   margin: 0 0 0 8px;
 }
@@ -835,6 +838,16 @@ img {
 .footer__copyright {
   color: #cbd5e0;
   font-size: 14px;
-  margin: 32px 0 0 0;
+}
+
+.footer__link {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 8px;
+  margin-right: 16px;
 }
 
