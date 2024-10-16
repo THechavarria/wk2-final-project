@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/a7a15f69c6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section class="landing__page">
@@ -34,6 +35,28 @@
             <a href="" class="nav__links--login">Login</a>
             <button class="nav__links--button">Sign up</button>
           </div>
+          <button class="button__menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+         </button>
+         <div class="menu__backdrop">
+           <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+             <i class="fas fa-times"></i>
+           </button>
+           <ul class="menu__links">
+             <li class="menu__list">
+               <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+             </li>
+             <li class="menu__list">
+               <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+             </li>
+             <li class="menu__list">
+               <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+             </li>
+           </ul>
+         </div>
       </header>
       <main>
         <div class="customers">
@@ -273,7 +296,7 @@
         <section>
           <div class="values__container">
             <div class="values__content--wrapper">
-              <h5><span>VALUES</span></h5>
+              <h5><span class="values__title">VALUES</span></h5>
               <h2 class="values__subtitle">
                 We Always Abide by Our <span>Principles.</span>
               </h2>
@@ -393,11 +416,14 @@
             </div>
           </div>
         </section>
+
+        <!-- TESTIMONIALS -->
+
         <section>
           <div class="testimonials__container">
             <div class="testimonials__wrapper">
-              <picture class="testimonials__image">
-                <img src="https://treact.owaiskhan.me/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="">
+              <picture>
+                <img src="https://treact.owaiskhan.me/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" class="testimonials__image">
               </picture>
               <div class="testimonials__content--wrapper">
                 <h5 class="testimonials__subheading">TESTIMONIALS</h5>
@@ -480,8 +506,9 @@
     </section>
 
     <section>
+    <div class="getstarted">
       <div class="getstarted__container">
-        <div>
+        <div class="getstarted__text--wrapper">
           <h5 class="getstarted__text"><b>Developers all over the world are happily using Treact</b></h5>
         </div>
         <div class="getstarted__anchors">
@@ -493,6 +520,7 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <section>
