@@ -236,6 +236,14 @@ form {
   align-items: center;
 }
 
+.features__img--container {
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 999px;
+  margin-bottom: 90px;
+  margin-right: 24px;
+  padding: 24px;
+}
+
 .features__img {
   width: 24px;
   height: 24px;
@@ -261,20 +269,14 @@ form {
   margin-top: 40px;
 }
 
-.features__img--container {
-  padding: 20px;
-}
-
 .features__services {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* MOVE IMG TO LEFT TOP */
-
 .features__description--container {
-  width: calc(100% / 3);
+  width: 30%;
   padding: 32px 8px;
   display: flex;
 }
@@ -298,6 +300,7 @@ form {
   width: 100%;
   max-width: 1280px;
   padding: 96px 0;
+  margin: 0 auto;
 }
 
 .design__info {
@@ -321,13 +324,13 @@ form {
 }
 
 .landingpage__img--wrapper {
+  width: 50%;
   display: flex;
   align-items: center;
 }
 
 .landingpage__img {
-  width: 460px;
-  height: 460px;
+  width: 100%;
 }
 
 /* STEPS */
@@ -408,6 +411,7 @@ form {
   width: 100%;
   max-width: 1280px;
   padding: 96px 0;
+  margin: 0 auto;
 }
 
 .values__content--wrapper {
@@ -450,6 +454,16 @@ form {
   width: 36px;
   height: 36px;
   background-color: #9ae6b4;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 6px;
+  text-align: center;
+}
+
+.values__briefcase {
+  width: 36px;
+  height: 36px;
+  background-color: rgb(255, 175, 175);
   font-size: 20px;
   border-radius: 50px;
   padding: 6px;
@@ -507,7 +521,7 @@ button {
 }
 
 .plans__para {
-  max-width: 576px;
+  max-width: 600px;
   font-size: 18px;
   color: #7c8ba1;
   margin-top: 16px;
@@ -517,6 +531,12 @@ button {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.plans {
+  border: 1px solid #718096;
+  border-radius: 8px;
+  width: 30%;
 }
 
 .threeplans__features--wrapper {
@@ -588,23 +608,8 @@ button {
   justify-content: space-between;
 }
 
-.plans {
-  border: 1px solid #718096;
-  border-radius: 8px;
-  width: calc(100% / 3);
-  padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-}
-
 .business__plan {
-  background-image: linear-gradient(
-    135deg,
-    rgb(76, 81, 191) 0%,
-    rgb(102, 126, 234) 100%
-  );
+  background-color: rgb(76 81 191);
   border: 1px solid #718096;
   border-radius: 8px;
   width: calc(100% / 3);
@@ -617,11 +622,23 @@ button {
   padding: 32px 0;
 }
 
+.three__plans--businessheader {
+  border: 1px solid #718096;
+  text-align: center;
+  padding: 32px 0;
+}
+
 .plan {
   text-align: center;
 }
 
 .features__action {
+  padding: 32px 72px;
+  align-items: center;
+}
+
+.features__action--businesswrapper {
+  border: 1px solid #718096;
   padding: 32px 72px;
   align-items: center;
 }
@@ -731,8 +748,6 @@ img {
   font-size: 16px;
 }
 
-
-
 .image__container {
   width: 16px;
   height: 16px;
@@ -784,7 +799,6 @@ img {
   max-width: 720px;
   align-items: center;
   background-color: #edf2f7;
-  
 }
 
 .faq_question--line {
@@ -850,7 +864,6 @@ img {
   width: 100%;
   background-color: rgb(100 21 255);
   padding: 96px 32px;
-
 }
 
 .footer__column {
@@ -858,13 +871,12 @@ img {
 }
 
 .footer__column--title,
-.footer__column--link
- {
-   margin: 12px 0 0;
-   color: #f7fafc;
-  }
-  
-  .footer__column--anchor {
+.footer__column--link {
+  margin: 12px 0 0;
+  color: #f7fafc;
+}
+
+.footer__column--anchor {
   color: #f7fafc;
 }
 
@@ -909,7 +921,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  
   .btn__menu {
     display: block;
   }
@@ -925,7 +936,7 @@ img {
   .highlight:not(:last-child) {
     margin-bottom: 24px;
   }
-  
+
   .customers {
     flex-direction: column;
     align-items: center;
@@ -962,7 +973,7 @@ img {
     align-items: center;
     flex-direction: column;
   }
-  
+
   .features__description--container {
     margin: 0 16px;
     width: 60%;
@@ -1009,7 +1020,7 @@ img {
 
   .values__title {
     text-align: center;
-  }  
+  }
 
   .threeplans__features--wrapper {
     display: flex;
@@ -1018,8 +1029,7 @@ img {
   }
 
   .plans,
-  .business__plan
-  {
+  .business__plan {
     width: 80%;
     align-items: center;
     margin-top: 64px;
@@ -1057,7 +1067,4 @@ img {
   .getstarted__anchors {
     margin: 24px 0;
   }
-
-
 }
-
